@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Influencer Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#222; }
+    header { background:#111; color:#fff; padding:20px; text-align:center; }
+    section { max-width:800px; margin:40px auto; padding:20px; background:#fff; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+    h1 { margin:0; }
+    .btn { display:inline-block; padding:10px 16px; margin-top:10px; background:#111; color:#fff; border-radius:6px; text-decoration:none; }
+    .btn:hover { background:#333; }
+    form { display:flex; flex-direction:column; }
+    input, textarea { margin:8px 0; padding:10px; border:1px solid #ccc; border-radius:6px; }
+    footer { text-align:center; padding:20px; color:#555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✨ Welcome to My Website ✨</h1>
+    <p>I am an Influencer – Connect with me below 👇</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hi! I’m [Your Name], a fashion & lifestyle influencer. I collaborate with brands and create engaging content on social media.</p>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Support / Payment</h2>
+    <p>You can support me here 👇</p>
+    <!-- UPI / PayPal link -->
+    <a class="btn" href="upi://pay?pa=yourupiid@upi&pn=YourName">Pay via UPI</a>
+    <br><br>
+    <a class="btn" href="https://paypal.me/yourpaypal">Pay via PayPal</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name – All Rights Reserved</p>
+  </footer>
+</body>
+</html>
