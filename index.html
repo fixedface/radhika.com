@@ -1,53 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Influencer Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radhika Gupta | Fashion & Lifestyle Influencer</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#222; }
-    header { background:#111; color:#fff; padding:20px; text-align:center; }
-    section { max-width:800px; margin:40px auto; padding:20px; background:#fff; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
-    h1 { margin:0; }
-    .btn { display:inline-block; padding:10px 16px; margin-top:10px; background:#111; color:#fff; border-radius:6px; text-decoration:none; }
-    .btn:hover { background:#333; }
-    form { display:flex; flex-direction:column; }
-    input, textarea { margin:8px 0; padding:10px; border:1px solid #ccc; border-radius:6px; }
-    footer { text-align:center; padding:20px; color:#555; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #444;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(135deg, #ff80ab, #ff4081);
+      color: white;
+      padding: 2.5rem 1rem;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 { margin-bottom: 0.5rem; font-size: 2rem; }
+    p { font-size: 1.1rem; margin: 0.5rem 0; }
+    section {
+      padding: 2rem 1rem;
+      max-width: 650px;
+      margin: auto;
+    }
+    .about {
+      background: #fff0f6;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      padding: 1.8rem;
+      margin-top: -1rem;
+    }
+    .about h2 {
+      color: #ff4081;
+      margin-bottom: 0.5rem;
+    }
+    .about p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    a.button {
+      display: inline-block;
+      background: #ff4081;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 10px 0;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+    a.button:hover {
+      background: #ff80ab;
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    img.qr {
+      margin-top: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #ffe6f0;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #ffd6e5;
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>✨ Welcome to My Website ✨</h1>
-    <p>I am an Influencer – Connect with me below 👇</p>
+    <h1>Radhika Gupta 💫</h1>
+    <p>Fashion & Lifestyle Influencer</p>
   </header>
 
-  <section>
+  <!-- 🌸 ABOUT ME SECTION -->
+  <section class="about">
     <h2>About Me</h2>
-    <p>Hi! I’m [Your Name], a fashion & lifestyle influencer. I collaborate with brands and create engaging content on social media.</p>
+    <p>
+      Hi! I’m <strong>Radhika Gupta</strong>, a Fashion & Lifestyle Influencer.  
+      I collaborate with brands and create engaging, aesthetic, and trendy content across social media platforms.  
+      My goal is to inspire confidence and style through creativity and authenticity.
+    </p>
   </section>
 
   <section>
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button class="btn" type="submit">Send Message</button>
-    </form>
+    <h2>📩 Contact Me</h2>
+    <p>Fill the form below or DM me on Instagram!</p>
+    <!-- Replace this with your own Google Form embed link -->
+    <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true">
+      Loading…
+    </iframe>
   </section>
 
   <section>
-    <h2>Support / Payment</h2>
-    <p>You can support me here 👇</p>
-    <!-- UPI / PayPal link -->
-    <a class="btn" href="upi://pay?pa=yourupiid@upi&pn=YourName">Pay via UPI</a>
-    <br><br>
-    <a class="btn" href="https://paypal.me/yourpaypal">Pay via PayPal</a>
+    <h2>💖 Support / Pay via UPI</h2>
+    <p>Click below to pay securely through UPI</p>
+    <a class="button" href="upi://pay?pa=jaishree@fam&pn=Radhika%20Gupta&tn=Payment%20for%20Collaboration&am=100&cu=INR">
+      Pay ₹100 via UPI
+    </a>
+    <p>Or scan this QR 👇</p>
+    <img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=jaishree@fam&pn=Radhika%20Gupta&am=100&cu=INR" alt="UPI QR">
   </section>
 
   <footer>
-    <p>© 2025 Your Name – All Rights Reserved</p>
+    © 2025 Radhika Gupta. All rights reserved.
   </footer>
+
 </body>
 </html>
